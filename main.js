@@ -1,10 +1,10 @@
-
+const data = {
+    number:0
+}
 
 Vue.component('my-component', {
-    data: function () {
-        return {
-            number: 0
-        }
+    data: function(){
+        return data
     },
     template: '<p>いいね({{number}})<button @click="increment"> +1</button></p>',
     methods: {
